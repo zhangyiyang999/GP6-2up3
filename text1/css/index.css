@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 渲染样式 */
+
+.main_box{
+    float: left;
+    margin-right:15px; 
+    margin-top: 10px;
+}
+.main_box .pic_box{
+    width: 224px;
+    height: 340px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background-size: cover;
+
+}
+.main_box .pic_box img{
+    width: 224px;
+    height: 340px;
+}
+.main_box_bottom{
+    width:224px;
+    height:58px;
+}
+.part{
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.part .price{
+    display: inline-block;
+    font-size: 16px;
+    color: #f36;
+    margin-right: 2px;
+}
+.part .collect{
+    float: right;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 3px;
+    color: #999;
+}
+.main_box_bottom .title{
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 28px;
+}
+.icon_select{
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+    margin-right: 4px;
+    background: #f36;
+    background-size: contain;
+    vertical-align: sub;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+/* 解决高度塌陷 */
+.main:after{
+    content: "";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}

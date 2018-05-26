@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拼接页面</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入样式文件 -->
+</head>
+<body>
+    <div class="main">
+
+    </div>
+</body>
+<script src="js/require.js"></script>   
+    <script>
+        require(["./js/require.config"],function(){
+            require(["jquery","render"],function($,render){ 
+                new render("http://mce.meilishuo.com/jsonp/get/3?offset=0&frame=1&trace=0&limit=10&endId=0&pid=106888&_=1526528205879",".main");
+  
+            });
+        })
+    </script>
+</html>
